@@ -178,6 +178,15 @@ on boot
     setprop windowsmgr.max_events_per_sec 180
     setprop ro.max.fling_velocity 8000
 
+on property:sys.perf.profile=0
+    write /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor powersave
+
+on property:sys.perf.profile=1
+    write /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor pegasusq
+
+on property:sys.perf.profile=2
+    write /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor performance
+
 service pvrsrvinit /system/bin/pvrsrvinit
     class core
     user root
