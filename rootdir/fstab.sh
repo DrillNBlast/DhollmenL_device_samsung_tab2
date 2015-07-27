@@ -1,6 +1,5 @@
 #!/sbin/busybox sh
 # Copyright 2014 - 2015 Tuxafgmur - Dhollmen
-# NOTE: This script assumes encrypted partitions are ext4 format.
 
 STABFILE=/fstab.$1
 
