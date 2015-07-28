@@ -1,5 +1,4 @@
 # Samsung Tab2
-# Dhollmen
 
 #                                                        mnt_point    type    options & mnt_flags                                                                                 fs_mgr_flags
 /dev/block/platform/omap/omap_hsmmc.1/by-name/FACTORYFS  /system      ext4    ro,noatime,nodiratime,barrier=0                                                                     wait
